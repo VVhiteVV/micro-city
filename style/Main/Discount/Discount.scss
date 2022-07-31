@@ -1,0 +1,43 @@
+.Discount{
+  background: url('../../../Img/Discount/Discount.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  margin-top: 50px;
+  &__Inner{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  &__content{
+    width: 400px;
+    h2{
+      color: #2DA3DC;
+    }
+    span{
+      display: block;
+    }
+    button{
+      margin-top: 50px;
+      font-size: 20px;
+      line-height: 30px;
+      height: 51px;
+      padding: 11px 14px 13px 14px ;
+      color: #FFFFFF;
+    }
+  }
+}
+
+@media only screen and (max-width: 475px){
+  .Discount{
+    background: url('../../../Img/Discount/Discount-Mobile.jpg') no-repeat;
+    background-size: cover;
+    &__content{
+      height: 665px;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.Bright {
+  min-height: 391px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+  grid-template-columns: 40% 60%;
+}
+.Bright__left h2 {
+  margin: 0px 0px 35px 0px;
+  color: #82B428;
+}
+.Bright__left span {
+  color: #2B2422;
+}
+.Bright__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+.Bright__right img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .Bright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/*# sourceMappingURL=Bright.css.map */

@@ -1,0 +1,117 @@
+.Details {
+  margin-top: 50px;
+}
+.Details h1 {
+  text-align: center;
+  max-width: 644px;
+  color: #2DA3DC;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+.Details__Card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 31.6666666667% 2vw 25.8761904762% 2vw 37.5476190476%;
+  grid-template-columns: 31.6666666667% 25.8761904762% 37.5476190476%;
+  gap: 2vw;
+}
+.Details__Item {
+  height: 100%;
+  border-radius: 10px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  cursor: pointer;
+}
+.Details__Item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.Details__ItemContent {
+  position: absolute;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(350%, #000000));
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #000000 350%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 350%);
+}
+.Details__ItemContent span {
+  color: white;
+  display: block;
+  margin: 0px 0px 10px 20px;
+}
+.Details__Slider {
+  position: relative;
+  margin-top: 50px;
+  display: none;
+}
+.Details__dots {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 5px;
+}
+.Details__dots span {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 2px;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  -o-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+  background-color: #aaa;
+}
+.Details__Slider-dots, .Details .active {
+  background-color: #2DA3DC;
+}
+
+@media only screen and (max-width: 500px) {
+  .Details__Card {
+    display: none;
+  }
+  .Details__Slider {
+    display: block;
+  }
+  .Details__ItemContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    text-align: center;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(#000000));
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  }
+  .Details__ItemContent span {
+    font-size: 5vw;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+}
+
+/*# sourceMappingURL=Details.css.map */

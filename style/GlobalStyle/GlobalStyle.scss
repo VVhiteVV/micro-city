@@ -1,0 +1,144 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+}
+@font-face {
+  font-family: 'Geometria';
+  src: local('Geometria'), local('Geometria'),
+  url('../../fonts/Geometria/Geometria.ttf') format('truetype');
+  font-style: normal;
+}
+*{
+  box-sizing: border-box;
+  font-family: Geometria;
+}
+
+.Main__wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1{
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+h2{
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+h3{
+  font-weight: 800;
+  margin-top: 0;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.container{
+  max-width: 1140px;
+  padding: 15px;
+}
+.span-low-text{
+  display: block;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 23px;
+}
+.span-middle-text{
+  display: block;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+}
+.span-card-text{
+  display: block;
+  font-weight: 500;
+  font-size: 24px;
+  min-height: 40px;
+  line-height: 100%;
+}
+.btn-success{
+  background: linear-gradient(34.66deg, #82B428 16.88%, #C5D210 76%);
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  border: none;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+.mobileImg,.mobileText{
+  display: none;
+}
+.next,.back{
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #C2C2C7;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  z-index: 5;
+  border-radius: 0 3px 3px 0;
+}
+.next{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.next:hover,.back:hover{
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media only screen and (max-width: 1024px){
+.span-middle-text,.span-low-text,.btn-success{
+  font-size: 2vw;
+}
+  span{
+    font-size: 2vw;
+  }
+  .span-card-text{
+    font-size: 2vw;
+  }
+  h1,h2{
+    margin-top: 0;
+    font-size: 4vw;
+    line-height: 6vw;
+  }
+  h3{
+    font-size: 3vw;
+  }
+}
+@media only screen and (max-width: 768px){
+  .mobileImg,.mobileText{
+    display: block;
+  }
+  .span-middle-text,.span-low-text,.btn-success{
+    font-size: 16px;
+  }
+  .span-card-text{
+    font-size: 3vw;
+    min-height: 0;
+  }
+  h2{
+    margin-top: 0;
+    font-size: 5vw;
+    line-height: 6vw;
+  }
+
+}
+@media only screen and (max-width: 540px){
+  h1{
+    font-size: 3vw;
+  }
+}

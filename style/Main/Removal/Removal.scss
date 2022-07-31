@@ -1,0 +1,36 @@
+.Removal{
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+  grid-template-columns: 40% 60%;
+  margin-top: 50px;
+  &__Left{
+    h2{
+      color: #2DA3DC;
+    }
+  }
+  &__Right{
+    img{
+      width: 100%;
+    }
+  }
+  &__Bottom{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .Removal{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 20px;
+    &__Bottom{
+      display: block;
+    }
+  }
+}

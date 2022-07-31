@@ -1,0 +1,354 @@
+.Room {
+  width: 100%;
+}
+.Room__topContent h2 {
+  color: #82B428;
+}
+.Room__Slider {
+  position: relative;
+  margin: auto;
+}
+.Room .active-rs {
+  display: none;
+}
+.Room__topInner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33% 67%;
+  grid-template-columns: 33% 67%;
+  border: 1px solid #C5C5C5;
+  box-shadow: 8px 8px 25px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 8px 8px 25px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 8px 8px 25px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+.Room__topInner img {
+  width: 100%;
+}
+.Room__topInner > img {
+  border-radius: 20px 0px 0px 20px;
+}
+.Room__right {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 10px 1fr 10px 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "left left right right" "left left right right" "bottom bottom bottom bottom";
+  padding: 40px 10px 20px 10px;
+  gap: 10px;
+}
+.Room__img {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: left;
+}
+.Room__textRight {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 3;
+  grid-area: right;
+}
+.Room__textRight h3 {
+  color: #2B2422;
+}
+.Room__textRight span {
+  display: block;
+}
+.Room__textRight button {
+  width: 75%;
+  margin-top: 25px;
+  min-height: 50px;
+}
+.Room__textBottom {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-area: bottom;
+}
+.Room__textBottom span {
+  display: block;
+}
+.Room__textBottom > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.Room__textBottom > div > div > span:last-child {
+  color: #2B2422;
+}
+.Room__dots {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 5px;
+}
+.Room__dots span {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 2px;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  -o-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+  background-color: #aaa;
+}
+.Room__Slider-dots, .Room .active {
+  background-color: #2DA3DC;
+}
+.Room__Card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 30% 30%;
+  grid-template-columns: 30% 30% 30%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.Room__Item {
+  height: 100%;
+  border-radius: 10px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  cursor: pointer;
+}
+.Room__Item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.Room__ItemContent {
+  z-index: 1;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(200%, #000000));
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #000000 200%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 200%);
+}
+.Room__ItemContent span {
+  color: white;
+  display: block;
+  margin: 0px 0px 10px 20px;
+}
+.Room__middleContent {
+  margin-top: 50px;
+}
+.Room__bottomContent {
+  background: url("../../../Img/Room/Bottom.jpg");
+  background-size: cover;
+  min-height: 350px;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.Room__bottomContent div {
+  width: 284px;
+}
+.Room__bottomContent div h2 {
+  color: #646865;
+}
+.Room__bottomContent div button {
+  height: 51px;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 11px 14px 13px 14px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .Room__topInner {
+    display: block;
+  }
+  .Room__topInner > img {
+    display: none;
+  }
+  .Room__bottomContent {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .Room__bottomContent > div {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 350px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .Room__Card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 30px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .Room__Item {
+    width: 100%;
+  }
+  .Room__ItemContent span {
+    font-size: 5vw;
+  }
+  .Room__right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .Room__textRight button {
+    margin-left: 12.5%;
+  }
+  .Room__textBottom > div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 20px 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "top top top" "left middle right";
+    text-align: center;
+    gap: 20px;
+  }
+  .Room__textBottom > div > div:nth-child(1) {
+    grid-area: top;
+  }
+  .Room__textBottom > div > div:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: left;
+  }
+  .Room__textBottom > div > div:nth-child(3) {
+    grid-area: middle;
+  }
+  .Room__textBottom > div > div:nth-child(4) {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+    grid-area: right;
+  }
+}
+@media only screen and (max-width: 768px) and (max-width: 768px) {
+  .Room__textBottom > div > .Room__img {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  .Room__textBottom > div > .Room__textRight {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 1;
+  }
+  .Room__textBottom > div > div:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+  }
+  .Room__textBottom > div > div:nth-child(2) {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  .Room__textBottom > div > div:nth-child(3) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+  }
+  .Room__textBottom > div > div:nth-child(4) {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 1;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .Room__bottomContent {
+    background: url("../../../Img/Room/Bottom-Mobile.jpg");
+    background-size: cover;
+    border-radius: 20px;
+  }
+  .Room__Card {
+    display: none;
+  }
+  .Room .active-rs {
+    display: block;
+  }
+  .Room__bottomContent > div {
+    height: 600px;
+  }
+  .Room__ItemContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    text-align: center;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(150%, #000000));
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #000000 150%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 150%);
+  }
+  .Room__ItemContent span {
+    font-size: 5vw;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+}
+
+/*# sourceMappingURL=Room.css.map */

@@ -1,0 +1,121 @@
+.Details{
+  margin-top: 50px;
+  h1{
+    text-align: center;
+    max-width: 644px;
+    color: #2DA3DC;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+  &__Card{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 95%/(1050/350) 2vw 95%/(1050/286) 2vw 95%/(1050/415);
+    grid-template-columns: 95%/(1050/350) 95%/(1050/286) 95%/(1050/415);
+    gap: 2vw;
+
+  }
+  &__Item{
+    height: 100%;
+    border-radius: 10px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    cursor: pointer;
+    img{
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
+  }
+  &__ItemContent{
+    position: absolute;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(350%, #000000));
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #000000 350%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 350%);
+    span{
+      color:white;
+      display: block;
+      margin: 0px 0px 10px 20px;
+
+    }
+  }
+  &__Slider{
+    position: relative;
+    margin-top: 50px;
+    display: none;
+  }
+  &__Slider-item{
+
+  }
+  &__dots{
+    margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 5px;
+    span{
+      cursor: pointer;
+      height: 12px;
+      width: 12px;
+      margin: 0 2px;
+      border-radius: 50%;
+      display: inline-block;
+      -webkit-transition: background-color 0.6s ease;
+      -o-transition: background-color 0.6s ease;
+      transition: background-color 0.6s ease;
+      background-color: #aaa;
+    }
+  }
+  &__Slider-dots,.active{
+    background-color: #2DA3DC;
+  }
+}
+@media only screen and (max-width: 500px){
+  .Details{
+    &__Card{
+      display: none;
+    }
+    &__Slider{
+      display: block;
+    }
+    &__ItemContent{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      align-items: flex-end;
+      text-align: center;
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(#000000));
+      background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #000000 100%);
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+      span{
+        font-size: 5vw;
+        margin-left: 0;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
