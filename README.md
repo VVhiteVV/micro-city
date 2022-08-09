@@ -1,6 +1,6 @@
 # Тестовое задание Affarts
 
-###Обзор сайта в десктопном разрешении
+### Обзор сайта в десктопном разрешении
 
 ![index](https://cdn.discordapp.com/attachments/356017746787565568/1003365311015305226/img.png?width=956&height=449)
 ![index](https://cdn.discordapp.com/attachments/356017746787565568/1003365311338254356/img_1.png?width=956&height=444)
@@ -10,7 +10,7 @@
 ![index](https://cdn.discordapp.com/attachments/356017746787565568/1003365353805586544/img_5.png?width=956&height=450)
 ![index](https://cdn.discordapp.com/attachments/356017746787565568/1003365354136948896/img_6.png?width=956&height=452)
 
-###Сайт в мобильном разрешении
+### Сайт в мобильном разрешении
 
 ![index](https://cdn.discordapp.com/attachments/356017746787565568/1003365353163857930/img_7.png?width=215&height=463) </br>
 ![index](https://cdn.discordapp.com/attachments/356017746787565568/1003365392749699223/img_8.png?width=277&height=463)  </br>
